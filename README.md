@@ -1,16 +1,24 @@
-# Awesome-Embedding-Model-API
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Embedding Model API Banner" width="100%" />
+</p>
 
-# 🧠 Top Embedding Model APIs
+# 🧠 Awesome Embedding Model API 🚀
 
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Embedding-Model-API/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Embedding-Model-API?style=flat-square&color=gold" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Embedding-Model-API/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Embedding-Model-API?style=flat-square&color=blue" alt="Forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Embedding-Model-API/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Embedding-Model-API?style=flat-square&color=red" alt="Issues" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Embedding-Model-API/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Embedding-Model-API?style=flat-square" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
+A curated directory of **Embedding Model APIs**, commercial hosted platforms, text & multimodal embedding services, open-source embedding models, inference engines, vector retrieval pipelines, and vector databases. Essential for **RAG**, **semantic search**, **knowledge bases**, and **AI agents**.
 
-A curated list of **Embedding Model APIs**, hosted embedding platforms, text embedding services, multimodal embedding APIs, open-source embedding models, embedding inference servers, and vector-retrieval building blocks.
+> 💡 **Open-source software is the primary focus of this repository.** This guide indexes commercial embedding SaaS APIs alongside the thriving open-source embedding ecosystem that can be self-hosted, fine-tuned, and deployed on private infrastructure without vendor lock-in.
 
-
-
-> **Open-source software is the primary focus of this repository.** The goal is to cover both commercial embedding APIs and the rapidly growing ecosystem of open-source embedding models that can be self-hosted, fine-tuned, and deployed without depending on a proprietary API.
-
-
+---
 
 Embedding models convert text, code, images, or other data into numerical vectors that capture semantic relationships. These vectors power applications such as:
 
@@ -80,6 +88,8 @@ Embedding models convert text, code, images, or other data into numerical vector
 
 * [⚠️ Disclaimer](#️-disclaimer)
 
+* [⭐ Star History](#-star-history)
+
 
 
 ---
@@ -88,34 +98,30 @@ Embedding models convert text, code, images, or other data into numerical vector
 
 # ☁️ SaaS/Hosted Platforms
 
+Commercial and hosted APIs providing managed embedding models for semantic search, RAG, recommendations, classification, clustering, code search, and multimodal retrieval.
 
+> 📊 **Market Overview & Structure**: The global AI embedding and vector search market is currently estimated at **$2.8 Billion - $3.5 Billion (2025–2026)** and projected to surge beyond **$16 Billion by 2032** (~25.4% CAGR). The sector is **moderately fragmented** rather than winner-take-all: while cloud hyperscalers (Microsoft Azure, AWS, Google Cloud) command massive enterprise volume, specialized retrieval engines (Cohere, Voyage AI, Jina AI) and agile serverless providers (Together AI, Fireworks, DeepInfra) capture significant market share with superior domain latency, multimodal capabilities, and aggressive pricing.
 
-Commercial and hosted APIs providing managed embedding models for semantic search, RAG, recommendations, classification, clustering, code search and multimodal retrieval.
-
-
-
-| Platform | Description | Primary Focus | Pricing | Free Tier Limit |
-| --- | --- | --- | --- | --- |
-| [OpenAI Embeddings](https://platform.openai.com/docs/guides/embeddings) | Managed embedding APIs for generating vector representations for search, clustering, and recommendations. | General Embeddings | $0.02 / 1M tokens (text-embedding-3-small); $0.13 / 1M tokens (text-embedding-3-large) | Free trial: 90 days with $5 in API credits (rate limits: 3 RPM / 200 RPD / 40,000 TPM) |
-| [Cohere Embed](https://cohere.com/embed) | Enterprise embedding API supporting text and multimodal inputs designed for search, classification, and clustering. | Enterprise Search / Multimodal | $0.10 / 1M tokens (Embed v3); $0.12 / 1M tokens (Embed v4); $0.47 / 1M image tokens | Free forever (Trial Key): 1,000 API calls/month (rate limit: 5 calls/min) for non-production evaluation |
-| [Voyage AI](https://www.voyageai.com/) | Specialized retrieval embedding platform offering general, multilingual, code, finance, and domain-specific models. | Retrieval / Domain Embeddings | $0.02 / 1M tokens (voyage-3-lite / voyage-4-lite); $0.12 / 1M tokens (voyage-3 / voyage-4) | Free forever: 200M free tokens on sign-up for general models (50M tokens for domain models), no expiration date |
-| [Jina AI](https://jina.ai/embeddings/) | Embedding APIs focused on 8k long-context, multilingual, and multimodal retrieval workloads. | Search / RAG | $0.05 / 1M tokens (via $50 bundle for 1B tokens; $500 bundle for 11B tokens at $0.045 / 1M tokens) | Free forever: 10M free tokens on sign-up (rate limit: 100 RPM / 100,000 TPM) for non-commercial use |
-| [Nomic Embed](https://www.nomic.ai/) | Embedding ecosystem providing high-quality open-weight embeddings and hosted embedding capabilities. | Open Models / Retrieval | $20/month (Individual plan includes $20/month AI credits; additional usage at $0.10 / 1M tokens) | Free trial: 30 days with $20 in AI usage credits on sign-up (or 1M free tokens for API testing) |
-| [Google Vertex AI Embeddings](https://cloud.google.com/vertex-ai/generative-ai/docs/embeddings/get-text-embeddings) | Managed Google Cloud embedding models for semantic search, classification, clustering, and retrieval. | Cloud AI | $0.025 / 1M characters (~$0.10 / 1M tokens for text-embedding-005); $0.15 / 1M tokens (gemini-embedding-001) | Free trial: 90 days with $300 in Google Cloud credits; free tier via Google AI Studio up to 1,500 RPM |
-| [Mistral Embeddings](https://docs.mistral.ai/capabilities/embeddings/) | Embedding API supporting text and code embeddings for retrieval, classification, and semantic search. | Text / Code | $0.10 / 1M tokens (mistral-embed) | Free forever (Experiment plan): Rate limit of 1 RPS / 30 RPM and up to 500,000 tokens/month for prototyping |
-| [Amazon Titan Text Embeddings](https://aws.amazon.com/bedrock/amazon-models/) | Amazon Bedrock embedding models for semantic search, RAG, and vector retrieval applications. | AWS / Enterprise | $0.02 / 1M tokens (Titan Text Embeddings V2); $0.10 / 1M tokens (Titan V1) | Free trial: 180 days with up to $200 in AWS promotional credits ($100 at signup + $100 for onboarding) |
-| [Azure OpenAI Embeddings](https://azure.microsoft.com/en-us/products/ai-services/openai-service) | Azure-hosted OpenAI embedding models integrated with enterprise security and compliance. | Enterprise Cloud | $0.02 / 1M tokens (text-embedding-3-small); $0.13 / 1M tokens (text-embedding-3-large) | Free trial: 30 days with $200 in Azure credits via Azure Free Account |
-| [IBM watsonx Embeddings](https://www.ibm.com/watsonx) | Enterprise AI platform providing embedding capabilities as part of the watsonx ecosystem. | Enterprise AI | $0.10 / 1M tokens ($0.0001 per 1,000 tokens) | Free forever (Sandbox/Lite plan): 300,000 foundation model tokens/month and 20 Compute Usage Hours/month |
-| [NVIDIA NIM](https://www.nvidia.com/en-us/ai-data-science/products/nim-microservices/) | Containerized inference microservices for deploying optimized AI embedding models on GPUs. | GPU Inference | $1.00 / GPU-hour on cloud instances (or $4,500/year per GPU license; partner serverless from $0.05 / 1M tokens) | Free trial: 90 days with 1,000 free API credits on sign-up (up to 5,000 credits for evaluation) |
-| [Hugging Face Inference Providers](https://huggingface.co/inference) | Hosted access to open models from the Hugging Face ecosystem through inference APIs. | Open Models | $0.02 / 1M tokens via Inference Providers (PRO plan at $9/month; dedicated GPU endpoints from $0.50/hour) | Free forever (Serverless API): ~1,000 requests/day for models under 10GB, plus monthly developer credits |
-| [Replicate](https://replicate.com/) | Hosted API platform for running machine-learning models, including embedding and retrieval models. | Model APIs | $0.000100 / CPU-sec and $0.000225 / T4 GPU-sec (~$0.02 / 1M tokens on official embedding models) | Free trial: 30 days with ~$5 in promotional trial credits or limited free model test runs on signup |
-| [Together AI](https://www.together.ai/) | Hosted inference platform supporting an open model ecosystem and high-throughput embedding workloads. | Open Models | $0.02 / 1M tokens (bge-base-en-v1.5); $0.08 / 1M tokens (bge-large-en-v1.5) | Free trial: 90 days with $5.00 to $25.00 in API credits for new accounts |
-| [Fireworks AI](https://fireworks.ai/) | Production AI inference platform supporting open models and low-latency embedding APIs. | Inference | $0.008 / 1M tokens (models ≤150M params); $0.016 / 1M tokens (models 150M–350M params) | Free forever: $1.00 free API credit on signup (equivalent to ~62.5M to 125M embedding tokens), no expiry |
-| [Cloudflare Workers AI](https://developers.cloudflare.com/workers-ai/) | Edge AI platform providing hosted model inference close to applications and users. | Edge AI | $0.011 / 1,000 Neurons (~$0.013 to $0.020 / 1M tokens for bge-base-en-v1.5) | Free forever: 10,000 Neurons/day (~7.7M tokens/day or ~50,000 embedding requests/day) |
-| [DeepInfra](https://deepinfra.com/) | Serverless AI inference platform offering low-cost managed open-source embedding models. | Open Models / Serverless | $0.005 / 1M tokens (bge-base-en-v1.5, e5-base-v2); $0.01 / 1M tokens (bge-large-en-v1.5, bge-m3) | Free trial: 30 days with $30 in credits upon signup, plus unauthenticated testing allowance |
-| [Infinity Embeddings](https://github.com/michaelfeil/infinity) | High-performance embedding inference platform that exposes embedding and reranking models through APIs. | Self-Hosted / API | $0 (Free open-source MIT; self-host on cloud compute instances from ~$5.00/month) | Free forever: 100% open-source MIT license with unlimited self-hosted requests and tokens |
-
-
+| Platform | Market Cap / Valuation / Revenue | Description | Primary Focus | Pricing | Free Tier Limit |
+| --- | --- | --- | --- | --- | --- |
+| [Azure OpenAI Embeddings](https://azure.microsoft.com/en-us/products/ai-services/openai-service) | ~$3.1T Market Cap / ~$245B Rev | Azure-hosted OpenAI embedding models integrated with enterprise security and compliance. | Enterprise Cloud | $0.02 / 1M tokens (text-embedding-3-small); $0.13 / 1M tokens (text-embedding-3-large) | Free trial: 30 days with $200 in Azure credits via Azure Free Account |
+| [NVIDIA NIM](https://www.nvidia.com/en-us/ai-data-science/products/nim-microservices/) | ~$2.8T Market Cap / ~$120B Rev | Containerized inference microservices for deploying optimized AI embedding models on GPUs. | GPU Inference | $1.00 / GPU-hour on cloud instances (or $4,500/year per GPU license; partner serverless from $0.05 / 1M tokens) | Free trial: 90 days with 1,000 free API credits on sign-up (up to 5,000 credits for evaluation) |
+| [Google Vertex AI Embeddings](https://cloud.google.com/vertex-ai/generative-ai/docs/embeddings/get-text-embeddings) | ~$2.1T Market Cap / ~$350B Rev | Managed Google Cloud embedding models for semantic search, classification, clustering, and retrieval. | Cloud AI | $0.025 / 1M characters (~$0.10 / 1M tokens for text-embedding-005); $0.15 / 1M tokens (gemini-embedding-001) | Free trial: 90 days with $300 in Google Cloud credits; free tier via Google AI Studio up to 1,500 RPM |
+| [Amazon Titan Text Embeddings](https://aws.amazon.com/bedrock/amazon-models/) | ~$1.9T Market Cap / ~$600B Rev | Amazon Bedrock embedding models for semantic search, RAG, and vector retrieval applications. | AWS / Enterprise | $0.02 / 1M tokens (Titan Text Embeddings V2); $0.10 / 1M tokens (Titan V1) | Free trial: 180 days with up to $200 in AWS promotional credits ($100 at signup + $100 for onboarding) |
+| [IBM watsonx Embeddings](https://www.ibm.com/watsonx) | ~$200B Market Cap / ~$62B Rev | Enterprise AI platform providing embedding capabilities as part of the watsonx ecosystem. | Enterprise AI | $0.10 / 1M tokens ($0.0001 per 1,000 tokens) | Free forever (Sandbox/Lite plan): 300,000 foundation model tokens/month and 20 Compute Usage Hours/month |
+| [OpenAI Embeddings](https://platform.openai.com/docs/guides/embeddings) | ~$157B Valuation / ~$3.7B+ Rev | Managed embedding APIs for generating vector representations for search, clustering, and recommendations. | General Embeddings | $0.02 / 1M tokens (text-embedding-3-small); $0.13 / 1M tokens (text-embedding-3-large) | Free trial: 90 days with $5 in API credits (rate limits: 3 RPM / 200 RPD / 40,000 TPM) |
+| [Cloudflare Workers AI](https://developers.cloudflare.com/workers-ai/) | ~$35B Market Cap / ~$1.6B Rev | Edge AI platform providing hosted model inference close to applications and users. | Edge AI | $0.011 / 1,000 Neurons (~$0.013 to $0.020 / 1M tokens for bge-base-en-v1.5) | Free forever: 10,000 Neurons/day (~7.7M tokens/day or ~50,000 embedding requests/day) |
+| [Mistral Embeddings](https://docs.mistral.ai/capabilities/embeddings/) | ~$6.2B Valuation | Embedding API supporting text and code embeddings for retrieval, classification, and semantic search. | Text / Code | $0.10 / 1M tokens (mistral-embed) | Free forever (Experiment plan): Rate limit of 1 RPS / 30 RPM and up to 500,000 tokens/month for prototyping |
+| [Cohere Embed](https://cohere.com/embed) | ~$5.5B Valuation / ~$50M+ Rev | Enterprise embedding API supporting text and multimodal inputs designed for search, classification, and clustering. | Enterprise Search / Multimodal | $0.10 / 1M tokens (Embed v3); $0.12 / 1M tokens (Embed v4); $0.47 / 1M image tokens | Free forever (Trial Key): 1,000 API calls/month (rate limit: 5 calls/min) for non-production evaluation |
+| [Hugging Face Inference Providers](https://huggingface.co/inference) | ~$4.5B Valuation / ~$70M+ Rev | Hosted access to open models from the Hugging Face ecosystem through inference APIs. | Open Models | $0.02 / 1M tokens via Inference Providers (PRO plan at $9/month; dedicated GPU endpoints from $0.50/hour) | Free forever (Serverless API): ~1,000 requests/day for models under 10GB, plus monthly developer credits |
+| [Together AI](https://www.together.ai/) | ~$1.25B Valuation (Unicorn) | Hosted inference platform supporting an open model ecosystem and high-throughput embedding workloads. | Open Models | $0.02 / 1M tokens (bge-base-en-v1.5); $0.08 / 1M tokens (bge-large-en-v1.5) | Free trial: 90 days with $5.00 to $25.00 in API credits for new accounts |
+| [Fireworks AI](https://fireworks.ai/) | ~$552M Valuation | Production AI inference platform supporting open models and low-latency embedding APIs. | Inference | $0.008 / 1M tokens (models ≤150M params); $0.016 / 1M tokens (models 150M–350M params) | Free forever: $1.00 free API credit on signup (equivalent to ~62.5M to 125M embedding tokens), no expiry |
+| [Replicate](https://replicate.com/) | ~$350M Valuation | Hosted API platform for running machine-learning models, including embedding and retrieval models. | Model APIs | $0.000100 / CPU-sec and $0.000225 / T4 GPU-sec (~$0.02 / 1M tokens on official embedding models) | Free trial: 30 days with ~$5 in promotional trial credits or limited free model test runs on signup |
+| [Voyage AI](https://www.voyageai.com/) | ~$250M Valuation | Specialized retrieval embedding platform offering general, multilingual, code, finance, and domain-specific models. | Retrieval / Domain Embeddings | $0.02 / 1M tokens (voyage-3-lite / voyage-4-lite); $0.12 / 1M tokens (voyage-3 / voyage-4) | Free forever: 200M free tokens on sign-up for general models (50M tokens for domain models), no expiration date |
+| [Jina AI](https://jina.ai/embeddings/) | ~$100M+ Valuation | Embedding APIs focused on 8k long-context, multilingual, and multimodal retrieval workloads. | Search / RAG | $0.05 / 1M tokens (via $50 bundle for 1B tokens; $500 bundle for 11B tokens at $0.045 / 1M tokens) | Free forever: 10M free tokens on sign-up (rate limit: 100 RPM / 100,000 TPM) for non-commercial use |
+| [Nomic Embed](https://www.nomic.ai/) | ~$100M Valuation | Embedding ecosystem providing high-quality open-weight embeddings and hosted embedding capabilities. | Open Models / Retrieval | $20/month (Individual plan includes $20/month AI credits; additional usage at $0.10 / 1M tokens) | Free trial: 30 days with $20 in AI usage credits on sign-up (or 1M free tokens for API testing) |
+| [DeepInfra](https://deepinfra.com/) | ~$15M Valuation (Seed) | Serverless AI inference platform offering low-cost managed open-source embedding models. | Open Models / Serverless | $0.005 / 1M tokens (bge-base-en-v1.5, e5-base-v2); $0.01 / 1M tokens (bge-large-en-v1.5, bge-m3) | Free trial: 30 days with $30 in credits upon signup, plus unauthenticated testing allowance |
+| [Infinity Embeddings](https://github.com/michaelfeil/infinity) | Open-Source ($0 corp) | High-performance embedding inference platform that exposes embedding and reranking models through APIs. | Self-Hosted / API | $0 (Free open-source MIT; self-host on cloud compute instances from ~$5.00/month) | Free forever: 100% open-source MIT license with unlimited self-hosted requests and tokens |
 
 > Cohere's current Embed API supports text and image inputs, and its API distinguishes use cases such as `search_document`, `search_query`, classification and clustering.
 
@@ -135,51 +141,38 @@ Commercial and hosted APIs providing managed embedding models for semantic searc
 
 # 🌍 Open-Source
 
+Open-source embedding models, frameworks, inference serving engines, and vector databases that can be self-hosted and integrated into applications without vendor lock-in.
 
+> 💻 Open-source embedding software can be run locally on GPUs, CPUs, Apple Silicon, private clouds, or Kubernetes clusters with zero per-token cost.
 
-Open-source embedding models, frameworks and infrastructure that can be self-hosted and integrated into applications without requiring a proprietary embedding API.
-
-
-
-> Open-source embedding software can be used with local GPUs, CPUs, Kubernetes clusters, private clouds or ordinary application servers.
-
-
-
-| Project                                                                  | Description                                                                                                              | Best Use                    |
-
-| ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ | --------------------------- |
-
-| [Sentence Transformers](https://github.com/UKPLab/sentence-transformers) | Open-source framework for generating, training and fine-tuning sentence, text and image embeddings as well as rerankers. | General Embeddings          |
-
-| [FlagEmbedding / BGE](https://github.com/FlagOpen/FlagEmbedding)         | Open-source retrieval toolkit containing BGE embedding, reranking, multimodal and fine-tuning models.                    | RAG / Retrieval             |
-
-| [E5](https://github.com/microsoft/unilm/tree/master/e5)                  | Microsoft's family of general-purpose text embedding models for retrieval and semantic similarity.                       | Retrieval                   |
-
-| [GTE](https://huggingface.co/Alibaba-NLP)                                | Alibaba-NLP embedding model family covering general-purpose and multilingual retrieval.                                  | Retrieval                   |
-
-| [Jina Embeddings](https://huggingface.co/jinaai)                         | Jina's openly available embedding model ecosystem for text and multimodal retrieval.                                     | Long Context / Retrieval    |
-
-| [Nomic Embed](https://huggingface.co/nomic-ai)                           | Open embedding models from Nomic designed for semantic search and retrieval.                                             | General Retrieval           |
-
-| [GritLM](https://github.com/ContextualAI/gritlm)                         | Open model architecture supporting both generation and embedding-oriented retrieval workloads.                           | Retrieval / Generation      |
-
-| [ColBERT](https://github.com/stanford-futuredata/ColBERT)                | Late-interaction retrieval architecture using token-level embeddings.                                                    | High-Quality Search         |
-
-| [Instructor](https://github.com/HKUNLP/Instructor)                       | Instruction-finetuned embedding models for task-specific semantic representations.                                       | Instruction-Aware Retrieval |
-
-| [LaBSE](https://github.com/UKPLab/sentence-transformers)                 | Multilingual sentence embedding model supporting cross-language semantic similarity.                                     | Multilingual                |
-
-| [Universal Sentence Encoder](https://github.com/tensorflow/hub)          | Sentence embedding ecosystem from Google Research.                                                                       | Semantic Similarity         |
-
-| [SimCSE](https://github.com/princeton-nlp/SimCSE)                        | Contrastive learning approach for sentence embeddings.                                                                   | Semantic Similarity         |
-
-| [GISTEmbed](https://github.com/xlang-ai/GISTEmbed)                       | Embedding models optimized using guided in-context similarity signals.                                                   | Retrieval                   |
-
-| [BGE-M3](https://github.com/FlagOpen/FlagEmbedding)                      | Multilingual embedding model supporting dense, sparse and multi-vector retrieval.                                        | Multilingual RAG            |
-
-| [Voyage Open Models](https://huggingface.co/voyageai)                    | Open-weight Voyage embedding models available for self-hosted experimentation and deployment.                            | Open Retrieval              |
-
-
+| Project | Description | Primary Strength |
+| --- | --- | --- |
+| [Ollama](https://github.com/ollama/ollama) [![Stars](https://img.shields.io/github/stars/ollama/ollama?style=social&color=white)](https://github.com/ollama/ollama/stargazers) | Lightweight local runtime for pulling, serving, and embedding with open models (nomic-embed, bge, mxbai). | Local AI & Embedding Inference |
+| [LangChain](https://github.com/langchain-ai/langchain) [![Stars](https://img.shields.io/github/stars/langchain-ai/langchain?style=social&color=white)](https://github.com/langchain-ai/langchain/stargazers) | Comprehensive application framework with integrations for 50+ embedding providers and vector stores. | RAG Orchestration & Agents |
+| [llama.cpp](https://github.com/ggml-org/llama.cpp) [![Stars](https://img.shields.io/github/stars/ggml-org/llama.cpp?style=social&color=white)](https://github.com/ggml-org/llama.cpp/stargazers) | Ultra-fast C/C++ inference engine supporting quantised embedding models on CPU and Apple Silicon / CUDA. | Edge / CPU Embedding Serving |
+| [vLLM](https://github.com/vllm-project/vllm) [![Stars](https://img.shields.io/github/stars/vllm-project/vllm?style=social&color=white)](https://github.com/vllm-project/vllm/stargazers) | High-throughput serving engine with PagedAttention and native pooling model support for dense embeddings. | Production AI Serving |
+| [RAGFlow](https://github.com/infiniflow/ragflow) [![Stars](https://img.shields.io/github/stars/infiniflow/ragflow?style=social&color=white)](https://github.com/infiniflow/ragflow/stargazers) | Open-source RAG engine based on deep document understanding and multi-modal embedding pipelines. | Enterprise RAG Systems |
+| [LlamaIndex](https://github.com/run-llama/llama_index) [![Stars](https://img.shields.io/github/stars/run-llama/llama_index?style=social&color=white)](https://github.com/run-llama/llama_index/stargazers) | Data framework tailored to indexing, chunking, and querying custom embedding models for LLMs. | Data Ingestion & Retrieval |
+| [Milvus](https://github.com/milvus-io/milvus) [![Stars](https://img.shields.io/github/stars/milvus-io/milvus?style=social&color=white)](https://github.com/milvus-io/milvus/stargazers) | Distributed cloud-native vector database designed to manage and search massive billion-scale vector indexes. | Large-Scale Vector Database |
+| [FAISS](https://github.com/facebookresearch/faiss) [![Stars](https://img.shields.io/github/stars/facebookresearch/faiss?style=social&color=white)](https://github.com/facebookresearch/faiss/stargazers) | Fundamental C++ and Python library by Meta for fast nearest-neighbor similarity search in high-dimensional spaces. | Vector Indexing & Search |
+| [Qdrant](https://github.com/qdrant/qdrant) [![Stars](https://img.shields.io/github/stars/qdrant/qdrant?style=social&color=white)](https://github.com/qdrant/qdrant/stargazers) | Vector similarity search engine written in Rust with advanced payload-based filtering and hybrid search. | Production Vector Database |
+| [CLIP](https://github.com/openai/CLIP) [![Stars](https://img.shields.io/github/stars/openai/CLIP?style=social&color=white)](https://github.com/openai/CLIP/stargazers) | Pioneering multimodal embedding model projecting text and images into a shared semantic vector space. | Multimodal Retrieval |
+| [Chroma](https://github.com/chroma-core/chroma) [![Stars](https://img.shields.io/github/stars/chroma-core/chroma?style=social&color=white)](https://github.com/chroma-core/chroma/stargazers) | Developer-friendly open-source vector store designed for developer ergonomics in Python and TypeScript. | Prototyping & RAG |
+| [Haystack](https://github.com/deepset-ai/haystack) [![Stars](https://img.shields.io/github/stars/deepset-ai/haystack?style=social&color=white)](https://github.com/deepset-ai/haystack/stargazers) | Production-ready orchestration framework for compound AI, neural semantic search, and RAG pipelines. | Enterprise Search & Retrieval |
+| [pgvector](https://github.com/pgvector/pgvector) [![Stars](https://img.shields.io/github/stars/pgvector/pgvector?style=social&color=white)](https://github.com/pgvector/pgvector/stargazers) | Lightweight PostgreSQL extension bringing vector similarity search (HNSW, IVFFlat) to relational DBs. | Relational + Vector Storage |
+| [E5 / UniLM](https://github.com/microsoft/unilm) [![Stars](https://img.shields.io/github/stars/microsoft/unilm?style=social&color=white)](https://github.com/microsoft/unilm/stargazers) | Microsoft's prominent family of universal text embeddings covering general, multilingual, and Mistral variants. | General & Multilingual Search |
+| [Sentence Transformers](https://github.com/UKPLab/sentence-transformers) [![Stars](https://img.shields.io/github/stars/UKPLab/sentence-transformers?style=social&color=white)](https://github.com/UKPLab/sentence-transformers/stargazers) | The industry-standard Python framework for training, fine-tuning, and inferencing state-of-the-art embeddings. | Embedding Training & Inference |
+| [Weaviate](https://github.com/weaviate/weaviate) [![Stars](https://img.shields.io/github/stars/weaviate/weaviate?style=social&color=white)](https://github.com/weaviate/weaviate/stargazers) | Open-source vector database with modular vectorizer plugins, GraphQL API, and BM25 hybrid ranking. | Cloud & Hybrid Vector Search |
+| [txtai](https://github.com/neuml/txtai) [![Stars](https://img.shields.io/github/stars/neuml/txtai?style=social&color=white)](https://github.com/neuml/txtai/stargazers) | All-in-one semantic search, embedding database, and workflow engine combining vector search with graphs. | Semantic Search Workflows |
+| [FlagEmbedding / BGE](https://github.com/FlagOpen/FlagEmbedding) [![Stars](https://img.shields.io/github/stars/FlagOpen/FlagEmbedding?style=social&color=white)](https://github.com/FlagOpen/FlagEmbedding/stargazers) | State-of-the-art BGE embedding models, multi-vector BGE-M3, visual embeddings, and cross-encoder rerankers. | Dense, Sparse & Multi-Vector RAG |
+| [ImageBind](https://github.com/facebookresearch/ImageBind) [![Stars](https://img.shields.io/github/stars/facebookresearch/ImageBind?style=social&color=white)](https://github.com/facebookresearch/ImageBind/stargazers) | Unified joint embedding architecture linking images, text, audio, depth, thermal, and IMU data. | Multi-Modal Representation |
+| [Text Embeddings Inference](https://github.com/huggingface/text-embeddings-inference) [![Stars](https://img.shields.io/github/stars/huggingface/text-embeddings-inference?style=social&color=white)](https://github.com/huggingface/text-embeddings-inference/stargazers) | Ultra-fast Rust/gRPC/HTTP inference engine with flash attention, token streaming, and dynamic batching. | Production Inference API |
+| [ColBERT](https://github.com/stanford-futuredata/ColBERT) [![Stars](https://img.shields.io/github/stars/stanford-futuredata/ColBERT?style=social&color=white)](https://github.com/stanford-futuredata/ColBERT/stargazers) | Efficient late-interaction neural retrieval model computing fine-grained token-level contextual similarity. | High-Precision Neural Search |
+| [SimCSE](https://github.com/princeton-nlp/SimCSE) [![Stars](https://img.shields.io/github/stars/princeton-nlp/SimCSE?style=social&color=white)](https://github.com/princeton-nlp/SimCSE/stargazers) | Contrastive learning framework establishing sentence representations with dropout-based augmentation. | Unsupervised Sentence Similarity |
+| [MTEB Benchmark](https://github.com/embeddings-benchmark/mteb) [![Stars](https://img.shields.io/github/stars/embeddings-benchmark/mteb?style=social&color=white)](https://github.com/embeddings-benchmark/mteb/stargazers) | The definitive benchmark framework for evaluating text and multimodal embedding models across 100+ tasks. | Embedding Evaluation & Ranking |
+| [Infinity](https://github.com/michaelfeil/infinity) [![Stars](https://img.shields.io/github/stars/michaelfeil/infinity?style=social&color=white)](https://github.com/michaelfeil/infinity/stargazers) | Blazing fast inference server for Sentence Transformers, rerankers, and CLIP with OpenAI-compatible API. | Self-Hosted Inference Server |
+| [Nomic](https://github.com/nomic-ai/nomic) [![Stars](https://img.shields.io/github/stars/nomic-ai/nomic?style=social&color=white)](https://github.com/nomic-ai/nomic/stargazers) | Client and open-weight models including nomic-embed-text offering long context window (8192 tokens). | Long-Context Embeddings |
+| [GritLM](https://github.com/ContextualAI/gritlm) [![Stars](https://img.shields.io/github/stars/ContextualAI/gritlm?style=social&color=white)](https://github.com/ContextualAI/gritlm/stargazers) | Generative Representational Instruction Tuning unifying embedding representations and text generation. | Dual Embedding & Generation |
 
 Sentence Transformers supports computing embeddings, training and fine-tuning embedding models, sparse encoders, rerankers and multi-vector encoders; its ecosystem includes thousands of pretrained models.
 
@@ -1513,14 +1506,9 @@ Embedding model capabilities, pricing, licensing, model availability and API spe
 
 ## ⭐ Star History
 
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Embedding-Model-API&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Embedding-Model-API&type=date&legend=top-left)
 
-
-If you find this repository useful, consider giving it a ⭐ star.
-
-
-
-It helps others discover the project and encourages continued curation.
-
+If you find this repository useful, consider giving it a ⭐ star. It helps others discover the project and encourages continued curation.
 
 
 ---

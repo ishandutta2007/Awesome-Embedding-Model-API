@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0d1527"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="30%" stop-color="#a78bfa"/>
+      <stop offset="70%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="20%" cy="30%" r="40%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="80%" cy="70%" r="40%">
+      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0"/>
+    </radialGradient>
+
+    <style>
+      @keyframes pulseNode {
+        0%, 100% { transform: scale(1); opacity: 0.6; }
+        50% { transform: scale(1.3); opacity: 1; filter: drop-shadow(0 0 8px #60a5fa); }
+      }
+      @keyframes pulseNodePink {
+        0%, 100% { transform: scale(1); opacity: 0.6; }
+        50% { transform: scale(1.4); opacity: 1; filter: drop-shadow(0 0 10px #ec4899); }
+      }
+      @keyframes dashLine {
+        to { stroke-dashoffset: -40; }
+      }
+      @keyframes floatParticle {
+        0%, 100% { transform: translateY(0px) translateX(0px); }
+        50% { transform: translateY(-12px) translateX(8px); }
+      }
+      @keyframes textShimmer {
+        0% { filter: drop-shadow(0 0 2px rgba(96,165,250,0.3)); }
+        50% { filter: drop-shadow(0 0 12px rgba(168,85,247,0.7)); }
+        100% { filter: drop-shadow(0 0 2px rgba(96,165,250,0.3)); }
+      }
+      .node-p1 { animation: pulseNode 3s ease-in-out infinite; transform-origin: 180px 110px; }
+      .node-p2 { animation: pulseNodePink 4s ease-in-out infinite; transform-origin: 290px 180px; }
+      .node-p3 { animation: pulseNode 3.5s ease-in-out infinite; transform-origin: 220px 260px; }
+      .node-p4 { animation: pulseNodePink 4.5s ease-in-out infinite; transform-origin: 1020px 120px; }
+      .node-p5 { animation: pulseNode 3.2s ease-in-out infinite; transform-origin: 930px 220px; }
+      .node-p6 { animation: pulseNodePink 3.8s ease-in-out infinite; transform-origin: 1050px 270px; }
+      .dash-flow { stroke-dasharray: 6, 6; animation: dashLine 2s linear infinite; }
+      .floating { animation: floatParticle 5s ease-in-out infinite; }
+      .title-text { animation: textShimmer 4s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)" stroke="#1e293b" stroke-width="2"/>
+  <rect width="1200" height="360" fill="url(#glow1)"/>
+  <rect width="1200" height="360" fill="url(#glow2)"/>
+
+  <!-- Left Network Visualization -->
+  <g class="dash-flow" stroke="#3b82f6" stroke-opacity="0.4" stroke-width="1.5">
+    <line x1="180" y1="110" x2="290" y2="180"/>
+    <line x1="290" y1="180" x2="220" y2="260"/>
+    <line x1="180" y1="110" x2="220" y2="260"/>
+    <line x1="120" y1="180" x2="180" y2="110"/>
+    <line x1="120" y1="180" x2="220" y2="260"/>
+    <line x1="290" y1="180" x2="380" y2="140"/>
+    <line x1="290" y1="180" x2="360" y2="240"/>
+  </g>
+
+  <!-- Left Nodes -->
+  <circle class="node-p1" cx="180" cy="110" r="7" fill="#60a5fa"/>
+  <circle class="node-p2" cx="290" cy="180" r="9" fill="#ec4899"/>
+  <circle class="node-p3" cx="220" cy="260" r="7" fill="#818cf8"/>
+  <circle cx="120" cy="180" r="5" fill="#38bdf8" opacity="0.6"/>
+  <circle cx="380" cy="140" r="5" fill="#c084fc" opacity="0.7"/>
+  <circle cx="360" cy="240" r="6" fill="#34d399" opacity="0.7"/>
+
+  <!-- Right Network Visualization -->
+  <g class="dash-flow" stroke="#8b5cf6" stroke-opacity="0.4" stroke-width="1.5">
+    <line x1="1020" y1="120" x2="930" y2="220"/>
+    <line x1="930" y1="220" x2="1050" y2="270"/>
+    <line x1="1020" y1="120" x2="1050" y2="270"/>
+    <line x1="1110" y1="190" x2="1020" y2="120"/>
+    <line x1="1110" y1="190" x2="1050" y2="270"/>
+    <line x1="930" y1="220" x2="840" y2="150"/>
+    <line x1="930" y1="220" x2="850" y2="280"/>
+  </g>
+
+  <!-- Right Nodes -->
+  <circle class="node-p4" cx="1020" cy="120" r="8" fill="#f43f5e"/>
+  <circle class="node-p5" cx="930" cy="220" r="9" fill="#38bdf8"/>
+  <circle class="node-p6" cx="1050" cy="270" r="7" fill="#a855f7"/>
+  <circle cx="1110" cy="190" r="5" fill="#fb923c" opacity="0.7"/>
+  <circle cx="840" cy="150" r="5" fill="#2dd4bf" opacity="0.6"/>
+  <circle cx="850" cy="280" r="5" fill="#ec4899" opacity="0.6"/>
+
+  <!-- Floating Vector Math Particles -->
+  <g class="floating" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" opacity="0.45">
+    <text x="240" y="80">[0.82, -0.41, 0.95]</text>
+    <text x="880" y="90">[0.17, 0.93, -0.64]</text>
+    <text x="320" y="310">cos(θ) = A · B / ‖A‖‖B‖</text>
+    <text x="820" y="320">dim = 1536 / 3072</text>
+  </g>
+
+  <!-- Central Header Badge -->
+  <g transform="translate(485, 55)">
+    <rect width="230" height="30" rx="15" fill="#1e293b" stroke="#334155" stroke-width="1.2"/>
+    <circle cx="20" cy="15" r="5" fill="#10b981"/>
+    <text x="35" y="20" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="600" letter-spacing="1">CURATED AI DIRECTORY</text>
+  </g>
+
+  <!-- Main Title -->
+  <text class="title-text" x="600" y="160" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="800" fill="url(#textGrad)" letter-spacing="-0.5">
+    🧠 Awesome Embedding Model APIs
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="210" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="400" fill="#94a3b8" letter-spacing="0.2">
+    Commercial SaaS APIs • Open-Source Models • Vector Databases • Inference Serving
+  </text>
+
+  <!-- Key Capability Badges Row -->
+  <g transform="translate(600, 260)" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">
+    <g transform="translate(-240, 0)">
+      <rect x="-65" y="-14" width="130" height="28" rx="14" fill="#1e293b" stroke="#3b82f6" stroke-width="1.2"/>
+      <text y="5" fill="#93c5fd">⚡ RAG &amp; Search</text>
+    </g>
+    <g transform="translate(-80, 0)">
+      <rect x="-65" y="-14" width="130" height="28" rx="14" fill="#1e293b" stroke="#8b5cf6" stroke-width="1.2"/>
+      <text y="5" fill="#c4b5fd">🌐 Multilingual</text>
+    </g>
+    <g transform="translate(80, 0)">
+      <rect x="-65" y="-14" width="130" height="28" rx="14" fill="#1e293b" stroke="#ec4899" stroke-width="1.2"/>
+      <text y="5" fill="#f472b6">🖼️ Multimodal</text>
+    </g>
+    <g transform="translate(240, 0)">
+      <rect x="-65" y="-14" width="130" height="28" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="1.2"/>
+      <text y="5" fill="#6ee7b7">💻 Code &amp; Text</text>
+    </g>
+  </g>
+</svg>
