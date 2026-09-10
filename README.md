@@ -94,49 +94,26 @@ Commercial and hosted APIs providing managed embedding models for semantic searc
 
 
 
-| Platform                                                                                                            | Description                                                                                                                         | Primary Focus                  |
-
-| ------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
-
-| [OpenAI Embeddings](https://platform.openai.com/docs/guides/embeddings)                                             | Managed embedding APIs for generating vector representations for search, clustering, recommendations and related tasks.             | General Embeddings             |
-
-| [Cohere Embed](https://cohere.com/embed)                                                                            | Enterprise embedding API supporting text and multimodal inputs, with embeddings designed for search, classification and clustering. | Enterprise Search / Multimodal |
-
-| [Voyage AI](https://www.voyageai.com/)                                                                              | Specialized embedding platform offering general-purpose, multilingual, code, finance and domain-oriented embedding models.          | Retrieval / Domain Embeddings  |
-
-| [Jina AI Embeddings](https://jina.ai/embeddings/)                                                                   | Embedding APIs focused on long-context, multilingual and multimodal retrieval workloads.                                            | Search / RAG                   |
-
-| [Nomic Embed](https://www.nomic.ai/)                                                                                | Embedding ecosystem providing high-quality open-weight embeddings and hosted embedding capabilities.                                | Open Models / Retrieval        |
-
-| [Google Vertex AI Embeddings](https://cloud.google.com/vertex-ai/generative-ai/docs/embeddings/get-text-embeddings) | Managed Google Cloud embedding models for semantic search, classification, clustering and retrieval applications.                   | Cloud AI                       |
-
-| [Mistral Embeddings](https://docs.mistral.ai/capabilities/embeddings/)                                              | Embedding API supporting text and code embeddings for retrieval, classification, clustering and semantic search.                    | Text / Code                    |
-
-| [Amazon Titan Text Embeddings](https://aws.amazon.com/bedrock/amazon-models/)                                       | Amazon Bedrock embedding models for semantic search, RAG and other vector-based applications.                                       | AWS / Enterprise               |
-
-| [Azure OpenAI Embeddings](https://azure.microsoft.com/en-us/products/ai-services/openai-service)                    | Azure-hosted OpenAI embedding models integrated with Microsoft's enterprise cloud and security ecosystem.                           | Enterprise Cloud               |
-
-| [Infinity Embeddings](https://github.com/michaelfeil/infinity)                                                      | High-performance embedding inference platform that can expose embedding and reranking models through APIs.                          | Self-Hosted / API              |
-
-| [Voyage AI](https://docs.voyageai.com/)                                                                             | API platform offering high-performance retrieval embeddings with configurable dimensions and domain-specific models.                | Retrieval                      |
-
-| [IBM watsonx Embeddings](https://www.ibm.com/watsonx)                                                               | Enterprise AI platform providing embedding capabilities as part of the watsonx ecosystem.                                           | Enterprise AI                  |
-
-| [NVIDIA NIM](https://www.nvidia.com/en-us/ai-data-science/products/nim-microservices/)                              | Containerized inference services for deploying optimized AI models, including embedding workloads.                                  | GPU Inference                  |
-
-| [Hugging Face Inference Providers](https://huggingface.co/inference)                                                | Hosted access to models from the Hugging Face ecosystem through inference APIs.                                                     | Open Models                    |
-
-| [Replicate](https://replicate.com/)                                                                                 | Hosted API platform for running machine-learning models, including embedding and retrieval models.                                  | Model APIs                     |
-
-| [Together AI](https://www.together.ai/)                                                                             | Hosted inference platform supporting a broad ecosystem of open models and embedding workloads.                                      | Open Models                    |
-
-| [Fireworks AI](https://fireworks.ai/)                                                                               | Production AI inference platform supporting open models and high-performance AI APIs.                                               | Inference                      |
-
-| [Cloudflare Workers AI](https://developers.cloudflare.com/workers-ai/)                                              | Edge AI platform providing hosted model inference close to applications and users.                                                  | Edge AI                        |
-
-| [Jina AI](https://jina.ai/)                                                                                         | AI infrastructure platform providing embeddings, reranking and search-oriented APIs.                                                | Search Infrastructure          |
-
-| [Voyage AI](https://www.voyageai.com/)                                                                              | Specialized retrieval model provider with general, multilingual and domain-specific embedding models.                               | Retrieval                      |
+| Platform | Description | Primary Focus | Pricing | Free Tier Limit |
+| --- | --- | --- | --- | --- |
+| [OpenAI Embeddings](https://platform.openai.com/docs/guides/embeddings) | Managed embedding APIs for generating vector representations for search, clustering, and recommendations. | General Embeddings | $0.02 / 1M tokens (text-embedding-3-small); $0.13 / 1M tokens (text-embedding-3-large) | Free trial: 90 days with $5 in API credits (rate limits: 3 RPM / 200 RPD / 40,000 TPM) |
+| [Cohere Embed](https://cohere.com/embed) | Enterprise embedding API supporting text and multimodal inputs designed for search, classification, and clustering. | Enterprise Search / Multimodal | $0.10 / 1M tokens (Embed v3); $0.12 / 1M tokens (Embed v4); $0.47 / 1M image tokens | Free forever (Trial Key): 1,000 API calls/month (rate limit: 5 calls/min) for non-production evaluation |
+| [Voyage AI](https://www.voyageai.com/) | Specialized retrieval embedding platform offering general, multilingual, code, finance, and domain-specific models. | Retrieval / Domain Embeddings | $0.02 / 1M tokens (voyage-3-lite / voyage-4-lite); $0.12 / 1M tokens (voyage-3 / voyage-4) | Free forever: 200M free tokens on sign-up for general models (50M tokens for domain models), no expiration date |
+| [Jina AI](https://jina.ai/embeddings/) | Embedding APIs focused on 8k long-context, multilingual, and multimodal retrieval workloads. | Search / RAG | $0.05 / 1M tokens (via $50 bundle for 1B tokens; $500 bundle for 11B tokens at $0.045 / 1M tokens) | Free forever: 10M free tokens on sign-up (rate limit: 100 RPM / 100,000 TPM) for non-commercial use |
+| [Nomic Embed](https://www.nomic.ai/) | Embedding ecosystem providing high-quality open-weight embeddings and hosted embedding capabilities. | Open Models / Retrieval | $20/month (Individual plan includes $20/month AI credits; additional usage at $0.10 / 1M tokens) | Free trial: 30 days with $20 in AI usage credits on sign-up (or 1M free tokens for API testing) |
+| [Google Vertex AI Embeddings](https://cloud.google.com/vertex-ai/generative-ai/docs/embeddings/get-text-embeddings) | Managed Google Cloud embedding models for semantic search, classification, clustering, and retrieval. | Cloud AI | $0.025 / 1M characters (~$0.10 / 1M tokens for text-embedding-005); $0.15 / 1M tokens (gemini-embedding-001) | Free trial: 90 days with $300 in Google Cloud credits; free tier via Google AI Studio up to 1,500 RPM |
+| [Mistral Embeddings](https://docs.mistral.ai/capabilities/embeddings/) | Embedding API supporting text and code embeddings for retrieval, classification, and semantic search. | Text / Code | $0.10 / 1M tokens (mistral-embed) | Free forever (Experiment plan): Rate limit of 1 RPS / 30 RPM and up to 500,000 tokens/month for prototyping |
+| [Amazon Titan Text Embeddings](https://aws.amazon.com/bedrock/amazon-models/) | Amazon Bedrock embedding models for semantic search, RAG, and vector retrieval applications. | AWS / Enterprise | $0.02 / 1M tokens (Titan Text Embeddings V2); $0.10 / 1M tokens (Titan V1) | Free trial: 180 days with up to $200 in AWS promotional credits ($100 at signup + $100 for onboarding) |
+| [Azure OpenAI Embeddings](https://azure.microsoft.com/en-us/products/ai-services/openai-service) | Azure-hosted OpenAI embedding models integrated with enterprise security and compliance. | Enterprise Cloud | $0.02 / 1M tokens (text-embedding-3-small); $0.13 / 1M tokens (text-embedding-3-large) | Free trial: 30 days with $200 in Azure credits via Azure Free Account |
+| [IBM watsonx Embeddings](https://www.ibm.com/watsonx) | Enterprise AI platform providing embedding capabilities as part of the watsonx ecosystem. | Enterprise AI | $0.10 / 1M tokens ($0.0001 per 1,000 tokens) | Free forever (Sandbox/Lite plan): 300,000 foundation model tokens/month and 20 Compute Usage Hours/month |
+| [NVIDIA NIM](https://www.nvidia.com/en-us/ai-data-science/products/nim-microservices/) | Containerized inference microservices for deploying optimized AI embedding models on GPUs. | GPU Inference | $1.00 / GPU-hour on cloud instances (or $4,500/year per GPU license; partner serverless from $0.05 / 1M tokens) | Free trial: 90 days with 1,000 free API credits on sign-up (up to 5,000 credits for evaluation) |
+| [Hugging Face Inference Providers](https://huggingface.co/inference) | Hosted access to open models from the Hugging Face ecosystem through inference APIs. | Open Models | $0.02 / 1M tokens via Inference Providers (PRO plan at $9/month; dedicated GPU endpoints from $0.50/hour) | Free forever (Serverless API): ~1,000 requests/day for models under 10GB, plus monthly developer credits |
+| [Replicate](https://replicate.com/) | Hosted API platform for running machine-learning models, including embedding and retrieval models. | Model APIs | $0.000100 / CPU-sec and $0.000225 / T4 GPU-sec (~$0.02 / 1M tokens on official embedding models) | Free trial: 30 days with ~$5 in promotional trial credits or limited free model test runs on signup |
+| [Together AI](https://www.together.ai/) | Hosted inference platform supporting an open model ecosystem and high-throughput embedding workloads. | Open Models | $0.02 / 1M tokens (bge-base-en-v1.5); $0.08 / 1M tokens (bge-large-en-v1.5) | Free trial: 90 days with $5.00 to $25.00 in API credits for new accounts |
+| [Fireworks AI](https://fireworks.ai/) | Production AI inference platform supporting open models and low-latency embedding APIs. | Inference | $0.008 / 1M tokens (models ≤150M params); $0.016 / 1M tokens (models 150M–350M params) | Free forever: $1.00 free API credit on signup (equivalent to ~62.5M to 125M embedding tokens), no expiry |
+| [Cloudflare Workers AI](https://developers.cloudflare.com/workers-ai/) | Edge AI platform providing hosted model inference close to applications and users. | Edge AI | $0.011 / 1,000 Neurons (~$0.013 to $0.020 / 1M tokens for bge-base-en-v1.5) | Free forever: 10,000 Neurons/day (~7.7M tokens/day or ~50,000 embedding requests/day) |
+| [DeepInfra](https://deepinfra.com/) | Serverless AI inference platform offering low-cost managed open-source embedding models. | Open Models / Serverless | $0.005 / 1M tokens (bge-base-en-v1.5, e5-base-v2); $0.01 / 1M tokens (bge-large-en-v1.5, bge-m3) | Free trial: 30 days with $30 in credits upon signup, plus unauthenticated testing allowance |
+| [Infinity Embeddings](https://github.com/michaelfeil/infinity) | High-performance embedding inference platform that exposes embedding and reranking models through APIs. | Self-Hosted / API | $0 (Free open-source MIT; self-host on cloud compute instances from ~$5.00/month) | Free forever: 100% open-source MIT license with unlimited self-hosted requests and tokens |
 
 
 
