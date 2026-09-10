@@ -1,0 +1,2 @@
+# Awesome-Embedding-Model-API
+
